@@ -23,7 +23,6 @@ export async function loader({ request, params }) {
 
 export async function action({request, params}) {
   const eventId = params.eventId;
-  console.log("here")
   const response = await fetch('http://localhost:8080/events/' + eventId, { method: request.method});
 
   if (!response.ok) {
