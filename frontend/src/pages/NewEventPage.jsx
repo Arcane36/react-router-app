@@ -13,7 +13,7 @@ export const action = async ({ request, params }) => {
   const eventData = {
     title: data.get('title'),
     image: data.get('image'),
-    data: data.get('data'),
+    date: data.get('date'),
     description: data.get('description'),
   };
 
